@@ -4,10 +4,11 @@ import AllCard from "./AllCard";
 
 const ShowCard = () => {
     const [card, setCard] = useState([])
-    const url = "https://hkk-petproject.herokuapp.com";
+    const url = "https://hkk-petproject.herokuapp.com/creatures";
     const fetchCards = async () => {
         await axios.get(url).then((response) => {
             console.log(response);
+            console.log(response.data)
             const data = response.data;
             setCard(data);
         });
