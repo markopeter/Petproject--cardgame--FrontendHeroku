@@ -1,11 +1,14 @@
-import logo from './logo.svg';
+
+
 import './App.css';
+import AllCard from "./components/AllCard";
+import ShowCard from "./components/ShowCard";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+      <div className="App">
+        <ShowCard/>
+      </div>
   );
 }
 
